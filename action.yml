@@ -1,0 +1,16 @@
+name: 'Setup ArangoDB'
+description: 'Setup ArangoDB'
+author: 'Xinova'
+branding:
+  icon: 'database'
+  color: 'blue'
+inputs:
+  # See https://hub.docker.com/_/arangodb for supported versions
+  # and further details on input environment variables
+  arangodb version:
+    description: 'Version of ArangoDB to use'
+    required: false
+    default: 'latest'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
